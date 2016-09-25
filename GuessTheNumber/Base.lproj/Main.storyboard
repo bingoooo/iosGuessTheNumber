@@ -51,6 +51,9 @@
                                 <rect key="frame" x="137" y="145" width="46" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="onOkPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bM-Dl-dmm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Guesses : X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ben-Pr-NEA">
                                 <rect key="frame" x="72" y="225" width="177" height="21"/>
@@ -62,6 +65,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mesageLbl" destination="p8C-Fi-Cbv" id="Xgo-eF-lE3"/>
+                        <outlet property="numGuessLbl" destination="Ben-Pr-NEA" id="i3T-54-RSy"/>
+                        <outlet property="numberTxtField" destination="23a-Yg-5P6" id="IgL-Du-U8J"/>
+                        <outlet property="rangeLbl" destination="R7e-WO-THn" id="Eyh-es-t3g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

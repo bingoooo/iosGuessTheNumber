@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBOutlet weak var rangeLbl: UILabel!
+    @IBOutlet weak var numberTxtField: UITextField!
+    @IBOutlet weak var mesageLbl: UILabel!
+    @IBOutlet weak var numGuessLbl: UILabel!
+    
+    @IBAction func onOkPressed(sender: AnyObject){
+        print(numberTxtField.text)
+    }
 }
 
