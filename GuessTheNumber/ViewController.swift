@@ -8,6 +8,11 @@
 
 import UIKit
 
+private var lowerBound = 0
+private var upperBound = 100
+private var numberOfGuesses = 0
+private var secretNumber = 0
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -27,6 +32,22 @@ class ViewController: UIViewController {
     
     @IBAction func onOkPressed(sender: AnyObject){
         print(numberTxtField.text)
+    }
+}
+
+private extension ViewController{
+    enum Comparison{
+        case Smaller
+        case Greater
+        case Equals
+    }
+    
+    func selectedNumber(number: Int){
+        
+    }
+    
+    func compareNumber(number: Int, otherNumber: Int) -> Comparison {
+        return Comparison.Equals
     }
 }
 
